@@ -10,7 +10,6 @@ expenseRouter.get("/", async (request, response) => {
   const collection = connection.collection("expenses");
 
   const results = await collection.find({}).toArray();
-  y;
 
   return response.send(results);
 });
